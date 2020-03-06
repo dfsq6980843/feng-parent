@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: feng-elasticsearch
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: 127.0.0.1:9300
+
+server:
+  port: 8032
+
+eureka:
+  client:
+    service-url:
+      #单机
+      #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
+      defaultZone: http://localhost:8010/eureka
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    #访问路径可以显示IP地址
+    prefer-ip-address: true
