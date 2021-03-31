@@ -19,7 +19,7 @@
         <swagger.version>2.7.0</swagger.version>
         <swagger.version>2.9.2</swagger.version>
         <swagger-ui.version>2.9.2</swagger-ui.version>
-        <guava.version>28.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
     </properties>
 
     <dependencyManagement>
